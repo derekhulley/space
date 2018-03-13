@@ -11,7 +11,28 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <dependency.jmonkey.version>3.2.1-stable</dependency.jmonkey.version>
     </properties>
+    
+    <dependencies>
+		<!-- https://mvnrepository.com/artifact/org.jmonkeyengine/jme3-core -->
+		<dependency>
+		    <groupId>org.jmonkeyengine</groupId>
+		    <artifactId>jme3-core</artifactId>
+		    <version>${dependency.jmonkey.version}</version>
+		</dependency>
+    </dependencies>
+    
+    <repositories>
+        <repository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>bintray-jmonkeyengine-org.jmonkeyengine</id>
+            <name>bintray</name>
+            <url>https://dl.bintray.com/jmonkeyengine/org.jmonkeyengine</url>
+        </repository>
+    </repositories>
 
     <build>
         <plugins>
